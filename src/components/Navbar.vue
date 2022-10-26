@@ -1,25 +1,6 @@
-<!-- <script>
-  import { createDOMCompilerError } from '@vue/compiler-dom'
-import axios from 'axios'
-  export default{
-    data() {
-      return {
-        genres: {
-          {}
-        }
-      }
-    },
-    async created() {
-      const url = ``
-      const {data} = await axios.get(url)
-      this.genres = data.genres
-    }
-  }
-</script> -->
-
 <template>
   <nav
-    class="bg-cyan-700 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
+    class="bg-yellow-500 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="" class="flex items-center">
@@ -130,7 +111,7 @@ import axios from 'axios'
           />
         </div>
         <ul
-          class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-cyan-700 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-yellow-500 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <a

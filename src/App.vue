@@ -1,8 +1,8 @@
 <script>
 import Navbar from "./components/Navbar.vue";
-import CardMovie from "./components/CardMovie.vue"
+import HomeView from "./views/HomeView.vue"
 export default {
-  components: { Navbar, CardMovie},
+  components: { Navbar, HomeView },
 };
 </script>
 <template>
@@ -10,12 +10,7 @@ export default {
     <Navbar />
   </header>
   <main>
-    <CardMovie />
-    <CardMovie />
-    <CardMovie />
-    <CardMovie />
-    <CardMovie />
-    <CardMovie />
+    <HomeView />
   </main>
 </template>
 

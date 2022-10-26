@@ -1,7 +1,7 @@
 <script>
   export default {
     props: {
-      movie: {
+      serie: {
         type: Object,
         default: {
           title: 'TETETTETETE',
@@ -11,8 +11,8 @@
       },
     },
     methods: {
-      mostrarmovie() {
-        alert(this.movie.title);
+      mostrarserie() {
+        alert(this.serie.title);
       },
       getImageUrl(poster_path) {
         return `https://image.tmdb.org/t/p/w500${poster_path}`;
@@ -22,11 +22,11 @@
   </script>
 <template>
     <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow-500 mx-4 my-4">
-  <img class="w-full" :src="getImageUrl(movie.poster_path)" alt="Sunset in the mountains">
+  <img class="w-full" :src="getImageUrl(serie.poster_path)" alt="Sunset in the mountains">
   <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">{{movie.title}}</div>
+    <div class="font-bold text-xl mb-2">{{serie.title}}</div>
     <p class="text-gray-700 text-base">
-      {{movie.overview}}
+      {{serie.overview}}
     </p>
   </div>
 </div>
