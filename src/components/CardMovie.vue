@@ -4,9 +4,9 @@
       movie: {
         type: Object,
         default: {
-          title: 'TETETTETETE',
-          poster_path: '/wwemzKWzjKYJFfCeiB57q3r4Bcm.png',
-          overview: 's'
+          title: '',
+          poster_path: '',
+          overview: ''
         }
       },
     },
