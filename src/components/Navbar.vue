@@ -1,5 +1,4 @@
 <script>
-
 </script>
 <template>
   <nav
@@ -118,7 +117,7 @@
         >
           <li>
             <a
-              href="#"
+              href=""
               class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900"
               aria-current="page"
               >Home</a
