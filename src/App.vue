@@ -1,8 +1,7 @@
 <script>
 import Navbar from "./components/Navbar.vue";
-import HomeView from "./views/HomeView.vue"
 export default {
-  components: { Navbar, HomeView },
+  components: { Navbar },
 };
 </script>
 <template>
@@ -10,7 +9,7 @@ export default {
     <Navbar />
   </header>
   <main>
-    <HomeView />
+    <RouterView />
   </main>
 </template>
 

@@ -116,33 +116,16 @@
           class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-yellow-500 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
-            <a
-              href=""
-              class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900"
-              aria-current="page"
-              >Home</a
-            >
+            <RouterLink to="/" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900">Home</RouterLink>
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Filmes</a
-            >
+            <RouterLink to="/movies" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Filmes</RouterLink>
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Séries</a
-            >
+            <RouterLink to="/series" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Séries</RouterLink>
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Documentários</a
-            >
+            <RouterLink to="/documentarios" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Documentários</RouterLink>
           </li>
         </ul>
       </div>
