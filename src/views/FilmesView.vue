@@ -8,15 +8,17 @@
     components: { CardMovie },
     data() {
       return {
-        filmes:[],
         acoes:[],
         comedias: [],
+        romances: [],
+        ficcoes: []
       }
     },
     async created() {
-      this.filmes =  await moviesAPI.getAcoes();
       this.acoes =  await moviesAPI.getAcoes();
       this.comedias =  await moviesAPI.getComedias();
+      this.romances = await moviesAPI.getRomances();
+      this.ficcoes = await moviesAPI.getFiccoes()
     },
   };
 </script>
@@ -38,13 +40,13 @@
   <div>
     <h1 class="text-yellow-500 font-bold pb-4">Romance</h1>
     <div class="flex flex-wrap">
-      <CardMovie v-for="filme of filmes.slice(8, 12)" :key="filme.id" :movie="filme" />
+      <CardMovie v-for="filme of romances.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>
   </div>
   <div>
     <h1 class="text-yellow-500 font-bold pb-4">Ficção Científica</h1>
     <div class="flex flex-wrap">
-      <CardMovie v-for="filme of filmes.slice(12, 16)" :key="filme.id" :movie="filme" />
+      <CardMovie v-for="filme of ficcoes.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>
   </div>
 

@@ -124,9 +124,6 @@
           <li>
             <RouterLink to="/series" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Séries</RouterLink>
           </li>
-          <li>
-            <RouterLink to="/documentarios" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Documentários</RouterLink>
-          </li>
         </ul>
       </div>
     </div>

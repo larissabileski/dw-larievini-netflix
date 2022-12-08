@@ -1,3 +1,0 @@
-<template>
-    bbbbb
-</template>
