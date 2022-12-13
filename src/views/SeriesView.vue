@@ -28,25 +28,25 @@
 <template>
   <main class="flex flex-column p-50">
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Drama</h1>
+    <h1 class="text-green-300 font-bold pb-4">Drama</h1>
     <div class="flex flex-wrap">
       <CardSerie v-for="serie of dramas.slice(0, 4)" :key="serie.id" :serie="serie" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Comédia</h1>
+    <h1 class="text-green-300 font-bold pb-4">Comédia</h1>
     <div class="flex flex-wrap">
       <CardSerie v-for="serie of comedias.slice(0, 4)" :key="serie.id" :serie="serie" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Ações</h1>
+    <h1 class="text-green-300 font-bold pb-4">Ações</h1>
     <div class="flex flex-wrap">
       <CardSerie v-for="serie of acoes.slice(0, 4)" :key="serie.id" :serie="serie" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Ficção Científica</h1>
+    <h1 class="text-green-300 font-bold pb-4">Ficção Científica</h1>
     <div class="flex flex-wrap">
       <CardSerie v-for="serie of ficcoes.slice(0, 4)" :key="serie.id" :serie="serie" />
     </div>

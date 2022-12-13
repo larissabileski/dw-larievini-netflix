@@ -13,7 +13,7 @@ export default {
     },
   },
   async created() {
-    const res = await axios.get(`https://api.theseriedb.org/3/tv/${this.id}?api_key=81c14ff45faa24817f29db18e13bf3b0&language=pt-BR`)
+    const res = await axios.get(`https://api.themoviedb.org/3/tv/${this.id}?api_key=81c14ff45faa24817f29db18e13bf3b0&language=pt-BR`)
     this.serie = res.data
   }
 
@@ -21,17 +21,20 @@ export default {
 </script>
 
 <template>
-  <div class="bg-yellow-500">
-    <img class="object-cover w-full md:h-auto md:w-48 " :src="getImageUrl(serie.poster_path)" alt="">
-    <div class="justify-between p-4 leading-normal align-content-left"> 
-        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ serie.title }}</h1>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ serie.overview }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Gêneros: {{ serie.genres }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Titulo Original: {{ serie.original_title }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Data de Lançamento: {{ serie.release_date }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Duração: {{ serie.runtime }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Nota: {{ serie.vote_average }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Produtora: {{ serie.production_companies }}</p>
-    </div>
+<div class="place-self-center">
+  <div class="flex flex-col place-self-center bg-green-300 shadow-md md:flex-row w-3/5 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <img class="object-cover w-full h-96 md:h-full md:w-96" :src="getImageUrl(serie.poster_path)" alt="">
+      <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{serie.name}}</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600">{{serie.overview}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Título Original: {{ serie.original_name }}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Data de Lançamento: {{serie.first_air_date}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Episódios: {{serie.number_of_episodes}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Avaliação:{{serie.vote_average}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Produtoras: {{serie.production_companies}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Gêneros: {{serie.genres}}</p>
+
+      </div>
+  </div>
 </div>
 </template>

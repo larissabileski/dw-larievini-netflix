@@ -22,14 +22,8 @@ export default {
 </script>
 <template>
   <RouterLink :to="`/movie/${movie.id}`">
-    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-yellow-500 mx-4 my-4">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-green-300 mx-4 my-4">
       <img class="w-full" :src="getImageUrl(movie.poster_path)" alt="Sunset in the mountains">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{ movie.title }}</div>
-        <p class="text-gray-700 text-base">
-          {{ movie.overview }}
-        </p>
-      </div>
     </div>
   </RouterLink>
 </template>

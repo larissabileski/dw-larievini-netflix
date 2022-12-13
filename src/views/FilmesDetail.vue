@@ -21,17 +21,20 @@ export default {
 </script>
 
 <template>
-  <div class="bg-yellow-500">
-    <img class="object-cover w-full md:h-auto md:w-48 " :src="getImageUrl(movie.poster_path)" alt="">
-    <div class="justify-between p-4 leading-normal align-content-left"> 
-        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ movie.title }}</h1>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ movie.overview }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Gêneros: {{ movie.genres }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Titulo Original: {{ movie.original_title }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Data de Lançamento: {{ movie.release_date }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Duração: {{ movie.runtime }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Nota: {{ movie.vote_average }}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Produtora: {{ movie.production_companies }}</p>
-    </div>
+<div class="place-self-center">
+  <div class="flex flex-col place-self-center bg-green-300 shadow-md md:flex-row w-3/5 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <img class="object-cover w-full h-96 md:h-full md:w-96" :src="getImageUrl(movie.poster_path)" alt="">
+      <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{movie.title}}</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600">{{movie.overview}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Título Original: {{movie.original_title}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Data de Lançamento: {{movie.release_date}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Duração: {{movie.runtime}} minutos</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Avaliação:{{movie.vote_average}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Produtoras: {{movie.production_companies}}</p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">Gêneros: {{movie.genres}}</p>
+
+      </div>
+  </div>
 </div>
 </template>

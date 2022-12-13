@@ -2,7 +2,7 @@
 </script>
 <template>
   <nav
-    class="bg-yellow-500 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
+    class="bg-green-300 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="" class="flex items-center">
@@ -113,7 +113,7 @@
           />
         </div>
         <ul
-          class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-yellow-500 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-green-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <RouterLink to="/" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900">Home</RouterLink>

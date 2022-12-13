@@ -26,25 +26,25 @@
 <template>
   <main class="flex flex-column p-50">
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Ação</h1>
+    <h1 class="text-green-300 font-bold pb-4">Ação</h1>
     <div class="flex flex-wrap">
       <CardMovie v-for="filme of acoes.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Comédia</h1>
+    <h1 class="text-green-300 font-bold pb-4">Comédia</h1>
     <div class="flex flex-wrap">
       <CardMovie v-for="filme of comedias.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Romance</h1>
+    <h1 class="text-green-300 font-bold pb-4">Romance</h1>
     <div class="flex flex-wrap">
       <CardMovie v-for="filme of romances.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Ficção Científica</h1>
+    <h1 class="text-green-300 font-bold pb-4">Ficção Científica</h1>
     <div class="flex flex-wrap">
       <CardMovie v-for="filme of ficcoes.slice(0, 4)" :key="filme.id" :movie="filme" />
     </div>

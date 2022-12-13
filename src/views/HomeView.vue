@@ -24,13 +24,13 @@
 <template>
   <main class="flex flex-column p-50">
   <div>
-    <h1 class="text-yellow-500 font-bold pb-4">Filmes</h1>
+    <h1 class="text-green-300 font-bold pb-4">Filmes</h1>
     <div class="flex flex-wrap">
       <CardMovie v-for="filme of filmes.slice(0, 8)" :key="filme.id" :movie="filme" />
     </div>
   </div>
   <div>
-    <h1 class="text-yellow-500 font-bold py-4">Séries</h1>
+    <h1 class="text-green-300 font-bold py-4">Séries</h1>
     <div class="flex flex-wrap">
       <CardSerie v-for="serie of series.slice(0, 8)" :key="serie.id" :serie="serie" />
     </div>
