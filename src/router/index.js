@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import FilmesView from "../views/FilmesView.vue";
 import SeriesView from "../views/SeriesView.vue";
 import FilmesDetailView from "../views/FilmesDetail.vue";
-import SeriesDetailView from "../views/SeriesDetail.vue"
+import SeriesDetailView from "../views/SeriesDetail.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,7 +34,7 @@ const router = createRouter({
       name: "SerieDetail",
       component: SeriesDetailView,
       props: true,
-    }
+    },
   ],
 });
 export default router;

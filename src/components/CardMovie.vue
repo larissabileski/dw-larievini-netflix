@@ -4,10 +4,10 @@ export default {
     movie: {
       type: Object,
       default: {
-        title: '',
-        poster_path: '',
-        overview: ''
-      }
+        title: "",
+        poster_path: "",
+        overview: "",
+      },
     },
   },
   methods: {
@@ -22,8 +22,14 @@ export default {
 </script>
 <template>
   <RouterLink :to="`/movie/${movie.id}`">
-    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-green-300 mx-4 my-4">
-      <img class="w-full" :src="getImageUrl(movie.poster_path)" alt="Sunset in the mountains">
+    <div
+      class="max-w-sm rounded overflow-hidden shadow-lg bg-green-300 mx-4 my-4"
+    >
+      <img
+        class="w-full"
+        :src="getImageUrl(movie.poster_path)"
+        alt="Sunset in the mountains"
+      />
     </div>
   </RouterLink>
 </template>

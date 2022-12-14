@@ -20,7 +20,6 @@ body {
 header {
   height: 15%;
   width: 100%;
-
 }
 main {
   height: 70%;

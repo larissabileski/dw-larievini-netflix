@@ -1,5 +1,4 @@
-<script>
-</script>
+<script></script>
 <template>
   <nav
     class="bg-green-300 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
@@ -116,13 +115,25 @@
           class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-green-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
-            <RouterLink to="/" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900">Home</RouterLink>
+            <RouterLink
+              to="/"
+              class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-white text-black md:hover:text-slate-900"
+              >Home</RouterLink
+            >
           </li>
           <li>
-            <RouterLink to="/movies" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Filmes</RouterLink>
+            <RouterLink
+              to="/movies"
+              class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Filmes</RouterLink
+            >
           </li>
           <li>
-            <RouterLink to="/series" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Séries</RouterLink>
+            <RouterLink
+              to="/series"
+              class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 text-black md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Séries</RouterLink
+            >
           </li>
         </ul>
       </div>
