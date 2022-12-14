@@ -33,4 +33,12 @@ export default class MoviesAPI {
     );
     return data.results;
   }
+  async getMovieDetails() {
+    const res = await axios.get(
+      `https://api.themoviedb.org/3/movie/${this.id}?api_key=4fdcb83a70141996aa81c40fd83651b9&language=pt-BR`
+    );
+    this.movie = res.data;
+  }
 }
+
+  

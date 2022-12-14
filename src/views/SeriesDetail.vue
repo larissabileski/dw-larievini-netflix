@@ -22,16 +22,18 @@ export default {
 </script>
 
 <template>
-  <div class="place-self-center">
+  <div class="flex justify-center w-100">
     <div
-      class="flex flex-col place-self-center bg-green-300 shadow-md md:flex-row w-3/5 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      class="flex w-4/5 shadow-md md:flex-row dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
     >
       <img
         class="object-cover w-full h-96 md:h-full md:w-96"
         :src="getImageUrl(serie.poster_path)"
         alt=""
       />
-      <div class="flex flex-col justify-between p-4 leading-normal">
+      <div
+        class="flex w-3/5 flex-col bg-green-300 justify-between justify-content-center ml-4 p-4 leading-normal"
+      >
         <h5
           class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
@@ -47,7 +49,7 @@ export default {
           Data de Lançamento: {{ serie.first_air_date }}
         </p>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">
-          Episódios: {{ serie.number_of_episodes }}
+          Episódios: {{ serie.number_of_episodes }} 
         </p>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-600 self-start">
           Avaliação:{{ serie.vote_average }}
